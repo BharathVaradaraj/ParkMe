@@ -22,3 +22,5 @@ while True:
     update_status(sensor_id,status)
 
 
+#This python file is used to read the output of sensors from the arduino uno and update the status of the
+#parking spot in the firebase database.
