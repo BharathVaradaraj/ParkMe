@@ -1,9 +1,9 @@
 {
   "project_info": {
     "project_number": "401914862547",
-    "firebase_url": "https://parkme-1474118929765.firebaseio.com",
+    "firebase_url": "https://*****",
     "project_id": "parkme-1474118929765",
-    "storage_bucket": "parkme-1474118929765.appspot.com"
+    "storage_bucket": "........."
   },
   "client": [
     {
@@ -15,13 +15,13 @@
       },
       "oauth_client": [
         {
-          "client_id": "401914862547-b6i2igh1mu2qpc4gjlteeqrcngp981ev.apps.googleusercontent.com",
+          "client_id": "................",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB95PUGc1yo4FqPMc4Zy191LC1Da_IQLwM"
+          "current_key": "......"
         }
       ],
       "services": {
