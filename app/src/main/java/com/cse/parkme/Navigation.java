@@ -19,6 +19,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -218,7 +219,6 @@ public class Navigation extends AppCompatActivity
         // Add cluster items (markers) to the cluster manager.
         addItems();
         mClusterManager.cluster();
-
     }
 
     private void addItems() {
@@ -240,18 +240,18 @@ public class Navigation extends AppCompatActivity
                     lat = loc_data.get("lat");
                     lng = loc_data.get("lng");
                     status = stat.get("status");
-                    Log.v("loc_data", lat+" "+lng);
+                    Log.v("loc_data", lat + " " + lng);
                     //LatLng mark = new LatLng(lat, lng);
                     //MarkerOptions marker = new MarkerOptions();
-                    if(status.equals("0")){
+                    if (status.equals("0")) {
                         MyItem mark = new MyItem(lat, lng, R.drawable.green_marker);
                         mClusterManager.addItem(mark);
-                    }
-                    else{
+                    } else {
                         MyItem mark = new MyItem(lat, lng, R.drawable.red_marker);
                         mClusterManager.addItem(mark);
                     }
                 }
+                mClusterManager.cluster();
             }
 
             @Override
