@@ -171,8 +171,6 @@ public class Navigation extends AppCompatActivity
         // Move the camera to Bangalore Region
         LatLng test = new LatLng(12.97194, 77.59369);
         //mMap.addMarker(new MarkerOptions().position(test).title("Marker in Bangalore").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
-        //mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(test, 9));
-        sleep(1200);
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(test, 11));
         searchLocation();
 
